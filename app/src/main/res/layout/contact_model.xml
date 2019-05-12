@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        >
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="40dp"
+                
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editButton"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/ic_menu_delete"
+                android:text="" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/addedDateTextView"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/deleteButton"
+                android:background="@android:drawable/ic_menu_edit"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/addedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTextView"
+                android:text="12 March 1988"
+
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                style="@style/username_passwordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usernameTextView"
+                android:text="Passwordff" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                style="@style/username_passwordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Username: mirzemedhi" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
